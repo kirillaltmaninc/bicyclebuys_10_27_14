@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>bicyclebuy</display-name>
+ 
+ 
+  <welcome-file-list>    
+    <welcome-file>index.jsp</welcome-file>   
+  </welcome-file-list>
+  
+   
+ 
+   <context-param>
+    <param-name>cybs</param-name>
+    <param-value>/WEB-INF/cybs.properties</param-value>
+  </context-param>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>Adminaction</display-name>
+    <servlet-name>Adminaction</servlet-name>
+    <servlet-class>com.admin.action.Adminaction</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>makepayments</servlet-name>
+    <url-pattern>/makepayments</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/testpaymentgateway</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/errorlocation</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>makepayments</display-name>
+    <servlet-name>makepayments</servlet-name>
+    <servlet-class>com.admin.action.makepayments</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/Adminaction</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/getmyaccount</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/makepaymentdetails</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <!-- <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/makepayments</url-pattern>
+  </servlet-mapping> -->
+  
+  
+  <!--  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/getcategorywiseproduct1</url-pattern>
+  </servlet-mapping>
+  -->
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/makepayments1</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/Category</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/gettnewlinkpage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/paymentgateway1</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/vieworderdetails</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/Shipping</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/deletecartitemsaftercheckout</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/Privacy-Policy</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/store-info</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/viewproductorderwise</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/registerorlogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/guestregisteruser1</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/userlogout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/getshippingaddress</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/login1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/paymentgateway</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/loginuserg</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/checkoutcart</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/clearcartdetails</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/loginuser</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/getmyprofile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/updateprofile</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/viewcartdetails</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/registeruser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/getcoupandetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/getcoupanoffer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/deletecartitems</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/Item</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/manufacturer</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/indexpage</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/getcategorywiseproduct</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/admin.bicyclebuys</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/Sucategory</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/categorydetails</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/addnewproduct</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/addcategory</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/productdetails</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/adminlogin</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/subscribetoemail</url-pattern>
+  </servlet-mapping>
+  
+  
+   
+  
+  <!-- cart management -->
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/addtocart</url-pattern>
+  </servlet-mapping>
+   
+   <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/addtocart1</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/updatecart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminaction</servlet-name>
+    <url-pattern>/deletecart</url-pattern>
+  </servlet-mapping>
+  
+  <!-- cart management -->
+</web-app>

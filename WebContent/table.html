@@ -1,0 +1,4175 @@
+
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+ 
+<title>   | bicyclebuys.com </title>
+   <meta name="description" content="null">
+   <meta name="keywords" content="null"> 
+  
+   <link rel="canonical" href="http://192.168.0.102:80/bicyclebuys/updatecart?null" />
+ 
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="">
+<script type="text/javascript" src="js/jquery.min.js">
+		</script>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href="css/BicycleBuys.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<link href="css/responsive-menu.css" rel="stylesheet" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+
+ 
+<link rel="stylesheet" href="css/styles.min.css" />
+<link href="css/jplist.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/table-new.css"/>
+<!-- js -->
+
+<script src="js/jquery-1.10.0.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jplist.min.js"></script>
+
+    
+   
+ 	<link rel="stylesheet" href="responsive-tables.css">
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="responsive-tables.js"></script>
+  
+	<style>
+		.main{
+		width:1000px;
+		margin:0 auto;
+		}
+		
+		.product{
+		width:400px;
+		float:left;
+		margin:10px;
+		border:1px #dedede solid;
+		padding:5px;
+		background-image:url(images/corner.jpg);
+		background-position:bottom right;
+		background-repeat:no-repeat;
+		}
+		
+		.product .title{
+		margin-bottom:6px;}
+		
+		.product img{
+		float:left;
+		margin-right:10px;
+		border:1px solid #dedede;}
+		
+		.product .description{font-size:10px; font-family:Geneva, Arial, Helvetica, sans-serif}
+	</style>  
+  
+
+<script>
+			$('document').ready(function(){
+				 
+				var minv=parseFloat($("#minv").html());
+				var maxv=parseFloat($("#maxv").html());
+				
+				
+				$('#demo').jplist({
+					
+					itemsBox: '.list' 
+					,itemPath: '.list-item' 
+					,panelPath: '.jplist-panel'
+					
+					,controlTypes: {
+					
+						//likes range slider
+						'range-slider-likes': {
+							className: 'RangeSlider'
+							,options: {
+								 
+								//jquery ui range slider
+								ui_slider: function($slider, $prev, $next){		
+									
+									$slider.slider({
+										min: minv
+										,max: maxv
+										,range: true
+										,values: [minv, maxv]
+										,slide: function(event, ui){									
+											$prev.text(ui.values[0] + ' likes');
+											$next.text(ui.values[1] + ' likes');
+										}
+									});
+								}
+								
+								,set_values: function($slider, $prev, $next){
+									
+									$prev.text($slider.slider('values', 0) + ' likes');
+									$next.text($slider.slider('values', 1) + ' likes');
+								}
+							}
+						}
+						
+						//prices range slider
+						,'range-slider-prices': {
+							className: 'RangeSlider'
+							,options: {
+								
+								//jquery ui range slider
+								ui_slider: function($slider, $prev, $next){		
+									
+									$slider.slider({
+										min:minv
+										,max: maxv
+										,range: true
+										,values: [minv, maxv]
+										,slide: function(event, ui){									
+											$prev.text('$' + ui.values[0]);
+											$next.text('$' + ui.values[1]);
+										}
+									});
+								}
+								
+								,set_values: function($slider, $prev, $next){
+									
+									$prev.text('$' + $slider.slider('values', 0));
+									$next.text('$' + $slider.slider('values', 1));
+								}
+							}
+						}
+						
+						//views range slider
+						,'range-slider-views': {
+							className: 'RangeSlider'
+							,options: {
+								
+								//jquery ui range slider
+								ui_slider: function($slider, $prev, $next){		
+									
+									$slider.slider({
+										min: minv
+										,max: maxv
+										,range: true
+										,values: [minv, maxv]
+										,slide: function(event, ui){									
+											$prev.text(ui.values[0] + ' views');
+											$next.text(ui.values[1] + ' views');
+										}
+									});
+								}
+								
+								,set_values: function($slider, $prev, $next){
+									
+									$prev.text($slider.slider('values', 0) + ' views');
+									$next.text($slider.slider('values', 1) + ' views');
+								}
+							}
+						}
+					}
+				});
+			});
+		</script>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/extra_style.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/footer.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all"/>
+<script type="text/javascript" src="js/scripts.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css" media="all"/>
+
+
+
+ 
+<script type='text/javascript' src="js/jquery-ui.js"></script>
+<script src="js/menu1.js" type="text/javascript"></script>
+<link href="css/menu1.css" rel="stylesheet" type="text/css" />
+ 
+  
+<script type='text/javascript'>//<![CDATA[ 
+$( document ).ready(function() {
+$("#container").mouseenter(function() {
+    $("#example3-link1").slideDown();
+});
+$("#container").mouseleave(function() {
+    $("#example3-link1").slideUp();
+});
+});
+
+</script>
+
+ 
+ 
+ <script type="text/javascript" src="js/treeMenu.js"></script>
+ 
+  
+
+
+</head>
+<body>
+ 
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      THE HOLIDAY GIFT GUIDE - FIND THE RIGHT GIFT FOR ANY CYCLIST >> </div>
+    <div class="navbar-collapse collapse"> </div>
+    <!--/.navbar-collapse --> 
+  </div>
+</div>
+
+<div class="navbar navbar-inverse navbar-fixed-top" style="background:#464445; position:relative;" role="navigation">
+  <div class="container">
+    <div class="navbar-header" > <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+     
+       <div class="checkout">
+         <ul> 
+          	
+           <div class="links"> <a href="registerorlogin">Create Account | login |</a> </div>			
+		    
+          <a href="viewcartdetails"><li>  (<font color="red" id="cartcount">4  </font>&nbsp;) item(s)</li></a> 
+         
+        </ul> 
+      </div>
+      <div class="number"> <span>1.800.424.5328</span> </div>
+    </div>
+    
+    <!--/.navbar-collapse --> 
+  </div>
+</div>
+<div class="navbar navbar-inverse navbar-fixed-top" style="background: #f4f4f4;
+border-bottom: solid 1px #bfbbbc; position:relative;" role="navigation">
+  <div class="container">
+    <div class="navbar-header" > <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <div class="links"> <a href="indexpage"> <img src="images/logo.png"  class="logo-img" > </a> </div>
+      
+      
+      
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <div class="navbar-collapse collapse" style="float:right;">
+        <link rel="stylesheet" href="general1.css" />
+        <form action="search" method="post" id="searchvalidation">
+         <div class="search">
+	          <input type="text" id="searchval"  name="searchitem" value="Search | Bike,Cloths and more..." onfocus="this.value=''" onblur="if(this.value=='') this.value='Search | Bike,Cloths and more...';" class="search1">
+	          <span id="fsearchval"></span>
+	          <div class="botton">
+	           <!-- <a href="#"> <img src="image/seacrch.png" width="12" height="15"> </a>-->
+	           <input type="submit" value="" style="border:0px;background-repeat:no-repeat;background-image:url('images/seacrch.png');width: 12px; height: 15px; " class="botton">
+	           </div>
+	        </div>
+	        </form>
+	        <script type="text/javascript" src="searchvalidation.js"></script>
+	        
+      </div>
+      
+      <div class="right-links">  
+      
+      	<span id="container">
+    <div id="caribbean-info">
+     <span>Shop by Categories<img src="images/download.png" width="15" height="9"  alt=""/></span>
+    </div>
+    
+  <div id="example3-link1">
+    
+     <div class="category-inner">  
+       <div >
+          <div id="menudiv">
+						
+						<div class="drop">
+         	  
+          
+
+ 
+         <div id="treeMenu">
+ 
+        <ul>
+        
+        
+									 <li><a href="Category?/Bicycles/&id=122&cate=Bicycles&subcatid=51,50,96,104,43,45,46,53,54,56,95,52,212" class="parent">Bicycles</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycles/bmx-freestyle-bikes&id=51&category=Bicycles&cate=BMX Freestyle/Racing">BMX Freestyle/Racing
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycles/bmx-jumping-bikes&id=50&category=Bicycles&cate=BMX Jumping  Bikes">BMX Jumping  Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycles/childrens-bikes&id=96&category=Bicycles&cate=Children's Bikes- 16"-24"">Children's Bikes- 16"-24"
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycles/folding-bikes&id=104&category=Bicycles&cate=Folding Bikes">Folding Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycles/front-suspension-bikes&id=45&category=Bicycles&cate=Front Suspension Bikes">Front Suspension Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycles/hybrid-bikes&id=46&category=Bicycles&cate=Hybrid Bikes">Hybrid Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycles/mountain-frame&id=53&category=Bicycles&cate=ATB Framesets">ATB Framesets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycles/road-bikes&id=54&category=Bicycles&cate=Road Bikes">Road Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycles/mountain-bikes&id=56&category=Bicycles&cate=Mountain Bikes">Mountain Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycles/sport-comfort-bikes&id=95&category=Bicycles&cate=Sport Comfort Bikes">Sport Comfort Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycles/road-frame&id=52&category=Bicycles&cate=Road Framesets">Road Framesets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycles/unicycles&id=212&category=Bicycles&cate=Unicycles">Unicycles
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Bike Parts/&id=124,125,126,129,130,132,133,151,158,160,161,167,199,210&cate=Bike Parts&subcatid=122,123,124,126,128,129,134,133,44,216" class="parent">Bike Parts</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bike Parts/headsets&id=122&category=Bike Parts&cate=Headsets">Headsets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bike Parts/hubs&id=123&category=Bike Parts&cate=Hubs">Hubs
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bike Parts/kickstands&id=124&category=Bike Parts&cate=Kickstands">Kickstands
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bike Parts/seatposts&id=126&category=Bike Parts&cate=Seatposts">Seatposts
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bike Parts/suspension-forks&id=129&category=Bike Parts&cate=Forks / Suspension Shocks">Forks / Suspension Shocks
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bike Parts/brakes&id=134&category=Bike Parts&cate=Brakes-Standard">Brakes-Standard
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bike Parts/disc-brakes&id=133&category=Bike Parts&cate=Disc Brakes">Disc Brakes
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Pedals/&id=123,154&cate=Pedals&subcatid=177,178,179" class="parent">Pedals</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Pedals/regular-pedals&id=177&category=Pedals&cate=Bmx / Adult Standard Pedals">Bmx / Adult Standard Pedals
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Pedals/mountain-pedals&id=178&category=Pedals&cate=Mountain Clipless Pedals">Mountain Clipless Pedals
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Pedals/road-pedals&id=179&category=Pedals&cate=Road Clipless Pedals">Road Clipless Pedals
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Bicycle Groups and Kits/&id=152,153,202&cate=Bicycle Groups and Kits&subcatid=130,132" class="parent">Bicycle Groups and Kits</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Groups and Kits/roadgroups&id=130&category=Bicycle Groups and Kits&cate=Road Groups">Road Groups
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Bicycle Wheels/&id=136,137,138&cate=Bicycle Wheels&subcatid=184,183,185,207" class="parent">Bicycle Wheels</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Wheels/road-wheels&id=184&category=Bicycle Wheels&cate=Road Wheels">Road Wheels
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Wheels/mountain-wheels&id=183&category=Bicycle Wheels&cate=Mountain Wheels">Mountain Wheels
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Wheels/bmx-wheels&id=185&category=Bicycle Wheels&cate=BMX Wheels">BMX Wheels
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Bicycle Tires/Tubes/&id=141,194,114,115,139&cate=Bicycle Tires/Tubes&subcatid=171,173,172,170" class="parent">Bicycle Tires/Tubes</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Tires/Tubes/mountain-tires&id=171&category=Bicycle Tires/Tubes&cate=Mountain Tires">Mountain Tires
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Tires/Tubes/bmxtires&id=173&category=Bicycle Tires/Tubes&cate=Bmx Tires">Bmx Tires
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Tires/Tubes/road-tires&id=172&category=Bicycle Tires/Tubes&cate=Road Tires">Road Tires
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Tires/Tubes/tubes&id=170&category=Bicycle Tires/Tubes&cate=Tubes">Tubes
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Cycling Shoes/&id=142&cate=Cycling Shoes&subcatid=102,103,174" class="parent">Cycling Shoes</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Cycling Shoes/road-shoes&id=102&category=Cycling Shoes&cate=Road Shoes">Road Shoes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Cycling Shoes/mountain-shoes&id=103&category=Cycling Shoes&cate=Mountain Shoes">Mountain Shoes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Cycling Shoes/spinning-shoes&id=174&category=Cycling Shoes&cate=Spinning Shoes">Spinning Shoes
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Helmets/&id=113&cate=Helmets&subcatid=156,157,158,200,201" class="parent">Helmets</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Helmets/kids-helmets&id=156&category=Helmets&cate=Kids / Youth Helmets">Kids / Youth Helmets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Helmets/mountain-helmets&id=157&category=Helmets&cate=Mountain Helmets">Mountain Helmets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Helmets/road-helmets&id=158&category=Helmets&cate=Road Helmets">Road Helmets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Helmets/bmx-helmets&id=200&category=Helmets&cate=BMX Helmets">BMX Helmets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Helmets/sport-helmets&id=201&category=Helmets&cate=Sport Helmets">Sport Helmets
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Clothing/&id=209,201,197,155,207,143,144,200,201&cate=Clothing&subcatid=138,140,141,142,143,144,145,146,147,148,190,226" class="parent">Clothing</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Clothing/bib-shorts&id=138&category=Clothing&cate=Bib-Shorts">Bib-Shorts
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Clothing/bicycle-hats&id=141&category=Clothing&cate=Bicycle Hats/Caps">Bicycle Hats/Caps
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Clothing/gloves&id=142&category=Clothing&cate=Bicycle Gloves">Bicycle Gloves
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Clothing/jackets&id=143&category=Clothing&cate=Jackets">Jackets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Clothing/jerseys&id=144&category=Clothing&cate=Jerseys">Jerseys
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Clothing/shorts&id=145&category=Clothing&cate=Bicycle Shorts">Bicycle Shorts
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Clothing/tights&id=147&category=Clothing&cate=Bicycle Tights">Bicycle Tights
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Clothing/winter-clothing-accessories&id=148&category=Clothing&cate=Winter Clothing / Accessories">Winter Clothing / Accessories
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Clothing/body-pads&id=226&category=Clothing&cate=Protective Gear">Protective Gear
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Hydration/ Bottle Cages and Nutrition/&id=156,195&cate=Hydration/ Bottle Cages and Nutrition&subcatid=159,160,161,210" class="parent">Hydration/ Bottle Cages and Nutrition</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Hydration/ Bottle Cages and Nutrition/water-bottles&id=159&category=Hydration/ Bottle Cages and Nutrition&cate=Water Bottles">Water Bottles
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Hydration/ Bottle Cages and Nutrition/water-bottle-cages&id=160&category=Hydration/ Bottle Cages and Nutrition&cate=Bottle Cages">Bottle Cages
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Hydration/ Bottle Cages and Nutrition/hydration-packs&id=161&category=Hydration/ Bottle Cages and Nutrition&cate=Hydration Packs">Hydration Packs
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Hydration/ Bottle Cages and Nutrition/energy-food&id=210&category=Hydration/ Bottle Cages and Nutrition&cate=Energy Food and Drinks">Energy Food and Drinks
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Bicycle Lights/&id=148&cate=Bicycle Lights&subcatid=162,163,197" class="parent">Bicycle Lights</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Lights/head-lights&id=162&category=Bicycle Lights&cate=Head Lights">Head Lights
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Lights/tail-lights&id=163&category=Bicycle Lights&cate=Tail Lights">Tail Lights
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Lights/light-sets&id=197&category=Bicycle Lights&cate=Light Sets">Light Sets
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Baby Seats and Tricycles/&id=163&cate=Baby Seats and Tricycles&subcatid=108,109" class="parent">Baby Seats and Tricycles</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Baby Seats and Tricycles/babyseats&id=108&category=Baby Seats and Tricycles&cate=Baby Seats">Baby Seats
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Car Bicycle Carriers/&id=116&cate=Car Bicycle Carriers&subcatid=135,136,137" class="parent">Car Bicycle Carriers</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Car Bicycle Carriers/hitch-bike-carrier&id=135&category=Car Bicycle Carriers&cate=Hitch Carriers">Hitch Carriers
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Car Bicycle Carriers/roof-bike-carrier&id=136&category=Car Bicycle Carriers&cate=Roof Carriers">Roof Carriers
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Car Bicycle Carriers/trunk-bike-carrier&id=137&category=Car Bicycle Carriers&cate=Trunk Carriers">Trunk Carriers
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Cycle Computers and Heart Rate Monitors/&id=121,205&cate=Cycle Computers and Heart Rate Monitors&subcatid=154,155" class="parent">Cycle Computers and Heart Rate Monitors</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Cycle Computers and Heart Rate Monitors/bicycle-computers&id=154&category=Cycle Computers and Heart Rate Monitors&cate=Bicycle Computers">Bicycle Computers
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Cycle Computers and Heart Rate Monitors/heart-rate-monitors&id=155&category=Cycle Computers and Heart Rate Monitors&cate=Heart Rate Monitors">Heart Rate Monitors
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Trailers/Joggers/&id=164,165&cate=Trailers/Joggers&subcatid=186,187,224" class="parent">Trailers/Joggers</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Trailers/Joggers/jogger&id=186&category=Trailers/Joggers&cate=Joggers">Joggers
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Trailers/Joggers/children-trailers&id=187&category=Trailers/Joggers&cate=Trailers">Trailers
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Locks/&id=118&cate=Locks&subcatid=164,165,166,107" class="parent">Locks</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Locks/disc-locks&id=164&category=Locks&cate=Disc Locks">Disc Locks
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Locks/cable-locks&id=165&category=Locks&cate=Cable Locks">Cable Locks
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Locks/chain-locks&id=166&category=Locks&cate=Chain Locks">Chain Locks
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Locks/u-locks&id=107&category=Locks&cate=U-Locks">U-Locks
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Tools/&id=112&cate=Tools&subcatid=167,98,168,169,106,97,98,99,100,196" class="parent">Tools</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Tools/lubrication&id=167&category=Tools&cate=Lubricants">Lubricants
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Tools/drivetrain-tools&id=98&category=Tools&cate=Drivetrain Tools">Drivetrain Tools
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Tools/miscellaneous-tools&id=168&category=Tools&cate=Miscellaneous Tools">Miscellaneous Tools
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Tools/wheel-tire-tools&id=169&category=Tools&cate=Wheel-Tire-Tools">Wheel-Tire-Tools
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Tools/repair-stands&id=106&category=Tools&cate=Bicycle Repair Stands">Bicycle Repair Stands
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Tools/tool-sets&id=97&category=Tools&cate=Bicycle Tool Sets">Bicycle Tool Sets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Tools/drivetrain-tools&id=98&category=Tools&cate=Drivetrain Tools">Drivetrain Tools
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Tools/brake-tools&id=99&category=Tools&cate=Brake Tools">Brake Tools
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Tools/headset-bottom-bracket-tools&id=100&category=Tools&cate=Headset / Bottom Bracket Tools">Headset / Bottom Bracket Tools
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Tools/multi-tools&id=196&category=Tools&cate=Multi Tools">Multi Tools
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Indoor Trainers/&id=119&cate=Indoor Trainers&subcatid=222" class="parent">Indoor Trainers</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Indoor Trainers/bicycle-trainers&id=222&category=Indoor Trainers&cate=Indoor Trainers">Indoor Trainers
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Bags Bike Racks/&id=120,130,147&cate=Bags Bike Racks&subcatid=110,111,112,114,115" class="parent">Bags Bike Racks</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bags Bike Racks/trunk-bags&id=110&category=Bags Bike Racks&cate=Trunk Bags">Trunk Bags
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bags Bike Racks/seat-bags&id=111&category=Bags Bike Racks&cate=Seat Bags">Seat Bags
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bags Bike Racks/handlebar-bags&id=112&category=Bags Bike Racks&cate=Handlebar Bags">Handlebar Bags
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bags Bike Racks/pannier-bag&id=114&category=Bags Bike Racks&cate=Pannier Bags">Pannier Bags
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bags Bike Racks/racks&id=115&category=Bags Bike Racks&cate=Bicycle Racks">Bicycle Racks
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Handlebars and Stems/&id=128,134,159,196,198&cate=Handlebars and Stems&subcatid=116,117,118,119,120,194,205" class="parent">Handlebars and Stems</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Handlebars and Stems/mountain-handlebars&id=116&category=Handlebars and Stems&cate=Mountain Handlebars">Mountain Handlebars
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Handlebars and Stems/road-bars&id=117&category=Handlebars and Stems&cate=Road Handlebars">Road Handlebars
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Handlebars and Stems/handlebar-ends&id=118&category=Handlebars and Stems&cate=Handlebar Bar Ends">Handlebar Bar Ends
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Handlebars and Stems/handlebar-grips-tapes&id=119&category=Handlebars and Stems&cate=Handlebar Tape / Grips">Handlebar Tape / Grips
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Handlebars and Stems/stems&id=120&category=Handlebars and Stems&cate=Stems">Stems
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Handlebars and Stems/handlbar-aero-bars&id=194&category=Handlebars and Stems&cate=Aero Bars">Aero Bars
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Handlebars and Stems/bmx-handlebars&id=205&category=Handlebars and Stems&cate=BMX Handlebars">BMX Handlebars
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Drivetrain Components/&id=122,125,126,127,133,152,158,161,162,167&cate=Drivetrain Components&subcatid=149,150,121,151,152,153,127,204,48,49" class="parent">Drivetrain Components</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Drivetrain Components/bottom-brackets&id=149&category=Drivetrain Components&cate=Bottom Brackets">Bottom Brackets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Drivetrain Components/cassettes&id=150&category=Drivetrain Components&cate=Cassettes">Cassettes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Drivetrain Components/chains&id=121&category=Drivetrain Components&cate=Chains">Chains
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Drivetrain Components/cranks&id=151&category=Drivetrain Components&cate=Crank Sets">Crank Sets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Drivetrain Components/front-derailleurs&id=152&category=Drivetrain Components&cate=Front Derailleurs">Front Derailleurs
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Drivetrain Components/rear-derailleurs&id=153&category=Drivetrain Components&cate=Rear Derailleur">Rear Derailleur
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Drivetrain Components/road-shifters&id=127&category=Drivetrain Components&cate=Road Shifters">Road Shifters
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Drivetrain Components/mountain-shifters&id=204&category=Drivetrain Components&cate=Mountain Shifters">Mountain Shifters
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Bicycle Storage Systems/&id=203&cate=Bicycle Storage Systems&subcatid=188,189,199,198" class="parent">Bicycle Storage Systems</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Storage Systems/bike-wall-holders&id=188&category=Bicycle Storage Systems&cate=Wall Storage Systems">Wall Storage Systems
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Storage Systems/parking-stands&id=199&category=Bicycle Storage Systems&cate=Parking Stands">Parking Stands
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Storage Systems/indoor-bicycle-storage&id=198&category=Bicycle Storage Systems&cate=Indoor Storage">Indoor Storage
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Bicycle Pumps/&id=149&cate=Bicycle Pumps&subcatid=180,181,182" class="parent">Bicycle Pumps</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Pumps/frame-pumps&id=180&category=Bicycle Pumps&cate=Frame Pumps">Frame Pumps
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Pumps/floor-pumps&id=181&category=Bicycle Pumps&cate=Floor Pumps">Floor Pumps
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Bicycle Pumps/air-inflators&id=182&category=Bicycle Pumps&cate=Air Inflators">Air Inflators
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+									 <li><a href="Category?/Seats/&id=131&cate=Seats&subcatid=125,175,176" class="parent">Seats</a><span></span>
+          
+          	
+										 
+										 
+										
+										 
+          	<ul>
+             <div>
+             
+										  
+									   
+									  <ul>
+											  
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Seats/mountain-seats&id=125&category=Seats&cate=Mountain Seats">Mountain Seats
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Seats/road-saddles&id=175&category=Seats&cate=Road Seats">Road Seats
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><span></span> <a
+									href="Sucategory?/Seats/comfort-seats&id=176&category=Seats&cate=Comfort / Cruiser Seats">Comfort / Cruiser Seats
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									   
+            	 
+                 </div>
+            </ul>
+             
+             </li>
+									 
+										</li>
+										 
+										
+								
+         
+             
+             
+         
+         
+           
+           
+           
+        </ul>
+</div>
+         </div>
+							   <ul id="menu1">
+							   
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Bicycles/&id=122&cate=Bicycles&subcatid=51,50,96,104,43,45,46,53,54,56,95,52,212">
+										Bicycles </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycles/bmx-freestyle-bikes&id=51&category=Bicycles&cate=BMX Freestyle/Racing">BMX Freestyle/Racing
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycles/bmx-jumping-bikes&id=50&category=Bicycles&cate=BMX Jumping  Bikes">BMX Jumping  Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycles/childrens-bikes&id=96&category=Bicycles&cate=Children's Bikes- 16"-24"">Children's Bikes- 16"-24"
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycles/folding-bikes&id=104&category=Bicycles&cate=Folding Bikes">Folding Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycles/front-suspension-bikes&id=45&category=Bicycles&cate=Front Suspension Bikes">Front Suspension Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycles/hybrid-bikes&id=46&category=Bicycles&cate=Hybrid Bikes">Hybrid Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycles/mountain-frame&id=53&category=Bicycles&cate=ATB Framesets">ATB Framesets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycles/road-bikes&id=54&category=Bicycles&cate=Road Bikes">Road Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycles/mountain-bikes&id=56&category=Bicycles&cate=Mountain Bikes">Mountain Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycles/sport-comfort-bikes&id=95&category=Bicycles&cate=Sport Comfort Bikes">Sport Comfort Bikes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycles/road-frame&id=52&category=Bicycles&cate=Road Framesets">Road Framesets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycles/unicycles&id=212&category=Bicycles&cate=Unicycles">Unicycles
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Bike Parts/&id=124,125,126,129,130,132,133,151,158,160,161,167,199,210&cate=Bike Parts&subcatid=122,123,124,126,128,129,134,133,44,216">
+										Bike Parts </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bike Parts/headsets&id=122&category=Bike Parts&cate=Headsets">Headsets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bike Parts/hubs&id=123&category=Bike Parts&cate=Hubs">Hubs
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bike Parts/kickstands&id=124&category=Bike Parts&cate=Kickstands">Kickstands
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bike Parts/seatposts&id=126&category=Bike Parts&cate=Seatposts">Seatposts
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bike Parts/suspension-forks&id=129&category=Bike Parts&cate=Forks / Suspension Shocks">Forks / Suspension Shocks
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bike Parts/brakes&id=134&category=Bike Parts&cate=Brakes-Standard">Brakes-Standard
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bike Parts/disc-brakes&id=133&category=Bike Parts&cate=Disc Brakes">Disc Brakes
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Pedals/&id=123,154&cate=Pedals&subcatid=177,178,179">
+										Pedals </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Pedals/regular-pedals&id=177&category=Pedals&cate=Bmx / Adult Standard Pedals">Bmx / Adult Standard Pedals
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Pedals/mountain-pedals&id=178&category=Pedals&cate=Mountain Clipless Pedals">Mountain Clipless Pedals
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Pedals/road-pedals&id=179&category=Pedals&cate=Road Clipless Pedals">Road Clipless Pedals
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Bicycle Groups and Kits/&id=152,153,202&cate=Bicycle Groups and Kits&subcatid=130,132">
+										Bicycle Groups and Kits </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Groups and Kits/roadgroups&id=130&category=Bicycle Groups and Kits&cate=Road Groups">Road Groups
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Bicycle Wheels/&id=136,137,138&cate=Bicycle Wheels&subcatid=184,183,185,207">
+										Bicycle Wheels </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Wheels/road-wheels&id=184&category=Bicycle Wheels&cate=Road Wheels">Road Wheels
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Wheels/mountain-wheels&id=183&category=Bicycle Wheels&cate=Mountain Wheels">Mountain Wheels
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Wheels/bmx-wheels&id=185&category=Bicycle Wheels&cate=BMX Wheels">BMX Wheels
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Bicycle Tires/Tubes/&id=141,194,114,115,139&cate=Bicycle Tires/Tubes&subcatid=171,173,172,170">
+										Bicycle Tires/Tubes </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Tires/Tubes/mountain-tires&id=171&category=Bicycle Tires/Tubes&cate=Mountain Tires">Mountain Tires
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Tires/Tubes/bmxtires&id=173&category=Bicycle Tires/Tubes&cate=Bmx Tires">Bmx Tires
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Tires/Tubes/road-tires&id=172&category=Bicycle Tires/Tubes&cate=Road Tires">Road Tires
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Tires/Tubes/tubes&id=170&category=Bicycle Tires/Tubes&cate=Tubes">Tubes
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Cycling Shoes/&id=142&cate=Cycling Shoes&subcatid=102,103,174">
+										Cycling Shoes </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Cycling Shoes/road-shoes&id=102&category=Cycling Shoes&cate=Road Shoes">Road Shoes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Cycling Shoes/mountain-shoes&id=103&category=Cycling Shoes&cate=Mountain Shoes">Mountain Shoes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Cycling Shoes/spinning-shoes&id=174&category=Cycling Shoes&cate=Spinning Shoes">Spinning Shoes
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Helmets/&id=113&cate=Helmets&subcatid=156,157,158,200,201">
+										Helmets </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Helmets/kids-helmets&id=156&category=Helmets&cate=Kids / Youth Helmets">Kids / Youth Helmets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Helmets/mountain-helmets&id=157&category=Helmets&cate=Mountain Helmets">Mountain Helmets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Helmets/road-helmets&id=158&category=Helmets&cate=Road Helmets">Road Helmets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Helmets/bmx-helmets&id=200&category=Helmets&cate=BMX Helmets">BMX Helmets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Helmets/sport-helmets&id=201&category=Helmets&cate=Sport Helmets">Sport Helmets
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Clothing/&id=209,201,197,155,207,143,144,200,201&cate=Clothing&subcatid=138,140,141,142,143,144,145,146,147,148,190,226">
+										Clothing </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Clothing/bib-shorts&id=138&category=Clothing&cate=Bib-Shorts">Bib-Shorts
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Clothing/bicycle-hats&id=141&category=Clothing&cate=Bicycle Hats/Caps">Bicycle Hats/Caps
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Clothing/gloves&id=142&category=Clothing&cate=Bicycle Gloves">Bicycle Gloves
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Clothing/jackets&id=143&category=Clothing&cate=Jackets">Jackets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Clothing/jerseys&id=144&category=Clothing&cate=Jerseys">Jerseys
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Clothing/shorts&id=145&category=Clothing&cate=Bicycle Shorts">Bicycle Shorts
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Clothing/tights&id=147&category=Clothing&cate=Bicycle Tights">Bicycle Tights
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Clothing/winter-clothing-accessories&id=148&category=Clothing&cate=Winter Clothing / Accessories">Winter Clothing / Accessories
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Clothing/body-pads&id=226&category=Clothing&cate=Protective Gear">Protective Gear
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Hydration/ Bottle Cages and Nutrition/&id=156,195&cate=Hydration/ Bottle Cages and Nutrition&subcatid=159,160,161,210">
+										Hydration/ Bottle Cages and Nutrition </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Hydration/ Bottle Cages and Nutrition/water-bottles&id=159&category=Hydration/ Bottle Cages and Nutrition&cate=Water Bottles">Water Bottles
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Hydration/ Bottle Cages and Nutrition/water-bottle-cages&id=160&category=Hydration/ Bottle Cages and Nutrition&cate=Bottle Cages">Bottle Cages
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Hydration/ Bottle Cages and Nutrition/hydration-packs&id=161&category=Hydration/ Bottle Cages and Nutrition&cate=Hydration Packs">Hydration Packs
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Hydration/ Bottle Cages and Nutrition/energy-food&id=210&category=Hydration/ Bottle Cages and Nutrition&cate=Energy Food and Drinks">Energy Food and Drinks
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Bicycle Lights/&id=148&cate=Bicycle Lights&subcatid=162,163,197">
+										Bicycle Lights </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Lights/head-lights&id=162&category=Bicycle Lights&cate=Head Lights">Head Lights
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Lights/tail-lights&id=163&category=Bicycle Lights&cate=Tail Lights">Tail Lights
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Lights/light-sets&id=197&category=Bicycle Lights&cate=Light Sets">Light Sets
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Baby Seats and Tricycles/&id=163&cate=Baby Seats and Tricycles&subcatid=108,109">
+										Baby Seats and Tricycles </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Baby Seats and Tricycles/babyseats&id=108&category=Baby Seats and Tricycles&cate=Baby Seats">Baby Seats
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Car Bicycle Carriers/&id=116&cate=Car Bicycle Carriers&subcatid=135,136,137">
+										Car Bicycle Carriers </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Car Bicycle Carriers/hitch-bike-carrier&id=135&category=Car Bicycle Carriers&cate=Hitch Carriers">Hitch Carriers
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Car Bicycle Carriers/roof-bike-carrier&id=136&category=Car Bicycle Carriers&cate=Roof Carriers">Roof Carriers
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Car Bicycle Carriers/trunk-bike-carrier&id=137&category=Car Bicycle Carriers&cate=Trunk Carriers">Trunk Carriers
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Cycle Computers and Heart Rate Monitors/&id=121,205&cate=Cycle Computers and Heart Rate Monitors&subcatid=154,155">
+										Cycle Computers and Heart Rate Monitors </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Cycle Computers and Heart Rate Monitors/bicycle-computers&id=154&category=Cycle Computers and Heart Rate Monitors&cate=Bicycle Computers">Bicycle Computers
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Cycle Computers and Heart Rate Monitors/heart-rate-monitors&id=155&category=Cycle Computers and Heart Rate Monitors&cate=Heart Rate Monitors">Heart Rate Monitors
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Trailers/Joggers/&id=164,165&cate=Trailers/Joggers&subcatid=186,187,224">
+										Trailers/Joggers </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Trailers/Joggers/jogger&id=186&category=Trailers/Joggers&cate=Joggers">Joggers
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Trailers/Joggers/children-trailers&id=187&category=Trailers/Joggers&cate=Trailers">Trailers
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Locks/&id=118&cate=Locks&subcatid=164,165,166,107">
+										Locks </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Locks/disc-locks&id=164&category=Locks&cate=Disc Locks">Disc Locks
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Locks/cable-locks&id=165&category=Locks&cate=Cable Locks">Cable Locks
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Locks/chain-locks&id=166&category=Locks&cate=Chain Locks">Chain Locks
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Locks/u-locks&id=107&category=Locks&cate=U-Locks">U-Locks
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Tools/&id=112&cate=Tools&subcatid=167,98,168,169,106,97,98,99,100,196">
+										Tools </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Tools/lubrication&id=167&category=Tools&cate=Lubricants">Lubricants
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Tools/drivetrain-tools&id=98&category=Tools&cate=Drivetrain Tools">Drivetrain Tools
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Tools/miscellaneous-tools&id=168&category=Tools&cate=Miscellaneous Tools">Miscellaneous Tools
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Tools/wheel-tire-tools&id=169&category=Tools&cate=Wheel-Tire-Tools">Wheel-Tire-Tools
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Tools/repair-stands&id=106&category=Tools&cate=Bicycle Repair Stands">Bicycle Repair Stands
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Tools/tool-sets&id=97&category=Tools&cate=Bicycle Tool Sets">Bicycle Tool Sets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Tools/drivetrain-tools&id=98&category=Tools&cate=Drivetrain Tools">Drivetrain Tools
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Tools/brake-tools&id=99&category=Tools&cate=Brake Tools">Brake Tools
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Tools/headset-bottom-bracket-tools&id=100&category=Tools&cate=Headset / Bottom Bracket Tools">Headset / Bottom Bracket Tools
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Tools/multi-tools&id=196&category=Tools&cate=Multi Tools">Multi Tools
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Indoor Trainers/&id=119&cate=Indoor Trainers&subcatid=222">
+										Indoor Trainers </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Indoor Trainers/bicycle-trainers&id=222&category=Indoor Trainers&cate=Indoor Trainers">Indoor Trainers
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Bags Bike Racks/&id=120,130,147&cate=Bags Bike Racks&subcatid=110,111,112,114,115">
+										Bags Bike Racks </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bags Bike Racks/trunk-bags&id=110&category=Bags Bike Racks&cate=Trunk Bags">Trunk Bags
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bags Bike Racks/seat-bags&id=111&category=Bags Bike Racks&cate=Seat Bags">Seat Bags
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bags Bike Racks/handlebar-bags&id=112&category=Bags Bike Racks&cate=Handlebar Bags">Handlebar Bags
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bags Bike Racks/pannier-bag&id=114&category=Bags Bike Racks&cate=Pannier Bags">Pannier Bags
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bags Bike Racks/racks&id=115&category=Bags Bike Racks&cate=Bicycle Racks">Bicycle Racks
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Handlebars and Stems/&id=128,134,159,196,198&cate=Handlebars and Stems&subcatid=116,117,118,119,120,194,205">
+										Handlebars and Stems </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Handlebars and Stems/mountain-handlebars&id=116&category=Handlebars and Stems&cate=Mountain Handlebars">Mountain Handlebars
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Handlebars and Stems/road-bars&id=117&category=Handlebars and Stems&cate=Road Handlebars">Road Handlebars
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Handlebars and Stems/handlebar-ends&id=118&category=Handlebars and Stems&cate=Handlebar Bar Ends">Handlebar Bar Ends
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Handlebars and Stems/handlebar-grips-tapes&id=119&category=Handlebars and Stems&cate=Handlebar Tape / Grips">Handlebar Tape / Grips
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Handlebars and Stems/stems&id=120&category=Handlebars and Stems&cate=Stems">Stems
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Handlebars and Stems/handlbar-aero-bars&id=194&category=Handlebars and Stems&cate=Aero Bars">Aero Bars
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Handlebars and Stems/bmx-handlebars&id=205&category=Handlebars and Stems&cate=BMX Handlebars">BMX Handlebars
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Drivetrain Components/&id=122,125,126,127,133,152,158,161,162,167&cate=Drivetrain Components&subcatid=149,150,121,151,152,153,127,204,48,49">
+										Drivetrain Components </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Drivetrain Components/bottom-brackets&id=149&category=Drivetrain Components&cate=Bottom Brackets">Bottom Brackets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Drivetrain Components/cassettes&id=150&category=Drivetrain Components&cate=Cassettes">Cassettes
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Drivetrain Components/chains&id=121&category=Drivetrain Components&cate=Chains">Chains
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Drivetrain Components/cranks&id=151&category=Drivetrain Components&cate=Crank Sets">Crank Sets
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Drivetrain Components/front-derailleurs&id=152&category=Drivetrain Components&cate=Front Derailleurs">Front Derailleurs
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Drivetrain Components/rear-derailleurs&id=153&category=Drivetrain Components&cate=Rear Derailleur">Rear Derailleur
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Drivetrain Components/road-shifters&id=127&category=Drivetrain Components&cate=Road Shifters">Road Shifters
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Drivetrain Components/mountain-shifters&id=204&category=Drivetrain Components&cate=Mountain Shifters">Mountain Shifters
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Bicycle Storage Systems/&id=203&cate=Bicycle Storage Systems&subcatid=188,189,199,198">
+										Bicycle Storage Systems </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Storage Systems/bike-wall-holders&id=188&category=Bicycle Storage Systems&cate=Wall Storage Systems">Wall Storage Systems
+								     </a></li>  
+										 
+												 
+												
+											  
+												
+												 
+												 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Storage Systems/parking-stands&id=199&category=Bicycle Storage Systems&cate=Parking Stands">Parking Stands
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Storage Systems/indoor-bicycle-storage&id=198&category=Bicycle Storage Systems&cate=Indoor Storage">Indoor Storage
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Bicycle Pumps/&id=149&cate=Bicycle Pumps&subcatid=180,181,182">
+										Bicycle Pumps </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Pumps/frame-pumps&id=180&category=Bicycle Pumps&cate=Frame Pumps">Frame Pumps
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Pumps/floor-pumps&id=181&category=Bicycle Pumps&cate=Floor Pumps">Floor Pumps
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Bicycle Pumps/air-inflators&id=182&category=Bicycle Pumps&cate=Air Inflators">Air Inflators
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+									
+									
+									
+									<li class="loaded"><a
+										href="Category?/Seats/&id=131&cate=Seats&subcatid=125,175,176">
+										Seats </a>  
+										
+										 
+										 
+										 
+										 
+										  
+									   
+									  <ul>
+											<h1>Sub Category</h1> 
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Seats/mountain-seats&id=125&category=Seats&cate=Mountain Seats">Mountain Seats
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Seats/road-saddles&id=175&category=Seats&cate=Road Seats">Road Seats
+								     </a></li>  
+										 
+												 
+												
+											  
+												 
+												
+												<li><a
+									href="Sucategory?/Seats/comfort-seats&id=176&category=Seats&cate=Comfort / Cruiser Seats">Comfort / Cruiser Seats
+								     </a></li>  
+										 
+												 
+												
+											 
+											 
+										</ul> 
+									  
+									  
+											
+										 
+										</li>
+										
+								
+							</ul>   
+			 
+						</div>
+        </div>
+      </div>
+    </div>
+    
+</span>
+      
+       </div>
+    </div>
+  </div>
+  
+  <!--/.navbar-collapse --> 
+</div>
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+
+ <div class="container">
+ 
+ 	 <div class="test">
+  <div class="add-to-cart">
+    		<h1> 
+    		1 888 4 Bike Buy Free Shipping $99 on Order Over
+    		</h1>
+           <div class="clear"></div>
+            <div class="clear"></div>
+             <div class="table-new">
+             	<div class="table-iiner">
+                <strong><a href="clearcartdetails">Clear All</a></strong>
+                	<table  border="1" width="100%">
+  <tr>
+    <td width="20%" class="bg"><strong>Qty.</strong></td>
+    <td colspan="2"><input type="text" class="Qty" size="5" name="qtyforupdate" value="1" id="select"></td>
+    
+    
+  </tr>
+   <tr>
+    <td class="bg"><strong>Item #</strong></td>
+    <td  colspan="2"> <span>0790577XL</span></td>
+    
+    
+  </tr>
+   <tr>
+    <td  class="bg"><strong>Description</strong></td>
+  
+  
+                              <td>  <a href="Item?/0790577XL/BikeHard Outline Pro Leg Warmers X-Large&amp;id=70731&amp;subid=148">
+							  <img src="productimages/0790577PART.jpg" width="45" alt="" class="img1"> </a> 
+							  <p><a href="Item?/0790577XL/BikeHard Outline Pro Leg Warmers X-Large&amp;id=70731&amp;subid=148">BikeHard Outline Pro Leg Warmers X-Large</a></p>
+							  <p>
+							  
+							  
+							  You have selected :
+							     X-Large Black  <br>  
+							  
+							  
+							  
+         </p><p><b><a href="#">    </a></b>  </p> 
+       <select name="colorandsizeid" class="dropdown" onchange="updatecart0();"> 
+          
+          
+          
+              <option value="Small Black<>70737">Small Black </option> 
+               
+          
+          
+             
+          
+          
+          
+              <option value="Medium Black<>70735">Medium Black </option> 
+               
+          
+          
+             
+          
+          
+          
+              <option value="Large Black<>70733">Large Black </option> 
+               
+          
+          
+             
+          
+          
+           
+              <option value="X-Large Black<>70739" selected="">X-Large Black </option> 
+               
+          
+          
+             
+        
+        </select>  
+                             </td>
+    
+    
+  </tr>
+   <tr>
+    <td class="bg"><strong>Unit Price</strong></td>
+    <td  colspan="2"><span>$39.99  </span></td>
+    </tr>
+     <tr>
+    <td class="bg"><strong>Total Price</strong></td>
+    <td  colspan="2"><span>$39.99  </span></td>
+    </tr>
+     <tr>
+    <td class="bg"><strong>Action</strong></td>
+    <td  colspan="2"> <div class="removed"><a href="deletecartitems?cid=583&amp;pid=70731">Remove </a></div> <input type="submit" class="removed1" value="Update"></td>
+    </tr>
+  
+</table>
+<table  border="0" width="100%">
+	 <tr class="bg1">
+    <td width="20%"  ><strong>Sub Total</strong></td>
+    <td ><p>$39.99  </p></td>
+    </tr>
+</table>
+
+
+                </div>
+             </div>
+              <div class="table-responsive">
+            <div class="Courses1">
+              <div id="msgerror"> 
+             
+              <font color="red">
+              
+              
+
+
+              
+              
+               </font>
+
+
+
+
+
+
+
+</div> <div class="clear"></div>
+                 
+                  
+                 
+                        
+                        
+                   <table class="course">
+							<tbody>
+							<tr class="even">
+							<td class="width"> <strong>Qty.</strong> </td>
+							<td id="Item"> <strong>Item #</strong></td>
+							<td colspan="2" id="Description"><strong>Description</strong></td>
+							<td><strong>Unit Price</strong></td>
+                            <td><strong>Total Price</strong></td>
+                             <td><strong>Action</strong></td>
+                              <td><strong><a href="clearcartdetails">Clear All</a></strong></td>
+							</tr>
+							 
+                             
+							
+							 
+		 	 
+					  
+                      <script type="text/javascript"> 
+                         function updatecart0() 
+	                      {	  
+		                      document.updatecartafterselect0.submit();
+	                      } 
+                        </script>
+							<form name="updatecartafterselect0" action="updatecart" method="post" >
+							<tr>
+							  <td class="width"><input type="text" class="Qty" size="5"  name="qtyforupdate" value="1" id="select"></td>
+							  <td><span>0790577XL</span>
+							  <input type="hidden" name="cartID" value="583">							  </td>
+							  <td colspan="1" >
+							  <a  href="Item?/0790577XL/BikeHard Outline Pro Leg Warmers X-Large&id=70731&subid=148">
+							  <img src="productimages/0790577PART.jpg" alt=""  class="img1"> </a> </td> 
+							  <td > 
+							  <p><a href="Item?/0790577XL/BikeHard Outline Pro Leg Warmers X-Large&id=70731&subid=148">BikeHard Outline Pro Leg Warmers X-Large</a></p>
+							  <p>
+							  
+							  
+							  You have selected :
+							     X-Large Black  <br>  
+							  
+							  
+							  
+         <p><b><a href="#">    </a></b>  </p> 
+       <select name ="colorandsizeid" class="dropdown" onchange="updatecart0();"> 
+          
+          
+          
+              <option value="Small Black<>70737">Small Black </option> 
+               
+          
+          
+             
+          
+          
+          
+              <option value="Medium Black<>70735">Medium Black </option> 
+               
+          
+          
+             
+          
+          
+          
+              <option value="Large Black<>70733">Large Black </option> 
+               
+          
+          
+             
+          
+          
+           
+              <option value="X-Large Black<>70739" selected>X-Large Black </option> 
+               
+          
+          
+             
+        
+        </select>  
+                             </td>
+							  </p>
+							  <td id="Item"><span>$39.99  </span></td>  
+							  <td id="Item"><span> $39.99   </span>
+							  <td id="Item" valign="center"><div class="removed"><a href="deletecartitems?cid=583&pid=70731">Remove </a></div></td>
+							  <td id="Item" valign="center"> <input type="submit" class="removed1" value="Update"></td>
+							  </tr>  
+							  </form>
+							    
+                      <script type="text/javascript"> 
+                         function updatecart1() 
+	                      {	  
+		                      document.updatecartafterselect1.submit();
+	                      } 
+                        </script>
+							<form name="updatecartafterselect1" action="updatecart" method="post" >
+							<tr>
+							  <td class="width"><input type="text" class="Qty" size="5"  name="qtyforupdate" value="2" id="select"></td>
+							  <td><span>0119731</span>
+							  <input type="hidden" name="cartID" value="584">							  </td>
+							  <td colspan="1" >
+							  <a  href="Item?/0119731/Pedro's Super Prestige Pump&id=14027&subid=181">
+							  <img src="productimages/0119731.jpg" alt=""  class="img1"> </a> </td> 
+							  <td > 
+							  <p><a href="Item?/0119731/Pedro's Super Prestige Pump&id=14027&subid=181">Pedro's Super Prestige Pump</a></p>
+							  <p>
+							  
+							   
+							    
+							  
+							  
+							  
+           
+           <div  >
+           <br/>
+            <p><b><a href="#">  </a></b>  </p> 
+           </div>
+                             </td>
+							  </p>
+							  <td id="Item"><span>$44.99  </span></td>  
+							  <td id="Item"><span> $89.98   </span>
+							  <td id="Item" valign="center"><div class="removed"><a href="deletecartitems?cid=584&pid=14027">Remove </a></div></td>
+							  <td id="Item" valign="center"> input type="submit" class="removed1" value="Update"></td>
+							  </tr>  
+							  </form>
+							    
+                      <script type="text/javascript"> 
+                         function updatecart2() 
+	                      {	  
+		                      document.updatecartafterselect2.submit();
+	                      } 
+                        </script>
+							<form name="updatecartafterselect2" action="updatecart" method="post" >
+							<tr>
+							  <td class="width"><input type="text" class="Qty" size="5"  name="qtyforupdate" value="1" id="select"></td>
+							  <td><span>0508097C</span>
+							  <input type="hidden" name="cartID" value="585">							  </td>
+							  <td colspan="1" >
+							  <a  href="Item?/0508097C/BikeHard Challenger Pro Asym 700c Road Wheel Set Campagnolo&id=74449&subid=184">
+							  <img src="productimages/0508098.jpg" alt=""  class="img1"> </a> </td> 
+							  <td > 
+							  <p><a href="Item?/0508097C/BikeHard Challenger Pro Asym 700c Road Wheel Set Campagnolo&id=74449&subid=184">BikeHard Challenger Pro Asym 700c Road Wheel Set Campagnolo</a></p>
+							  <p>
+							  
+							  
+							  You have selected :
+							     Campagnolo  <br>  
+							  
+							  
+							  
+         <p><b><a href="#">    </a></b>  </p> 
+       <select name ="colorandsizeid" class="dropdown" onchange="updatecart2();"> 
+          
+          
+           
+              <option value="Campagnolo<>74453" selected>Campagnolo </option> 
+               
+          
+          
+             
+          
+          
+          
+              <option value="Shimano<>74451">Shimano </option> 
+               
+          
+          
+             
+          
+          
+          
+              <option value="Shimano 11 Speed<>84669">Shimano 11 Speed </option> 
+               
+          
+          
+             
+        
+        </select>  
+                             </td>
+							  </p>
+							  <td id="Item"><span>$599.95  </span></td>  
+							  <td id="Item"><span> $599.95   </span>
+							  <td id="Item" valign="center"><div class="removed"><a href="deletecartitems?cid=585&pid=74449">Remove </a></div></td>
+							  <td id="Item" valign="center"> <input type="submit" class="removed1" value="Update"></td>
+							  </tr>  
+							  </form>
+							  
+					
+	 			   <tr class="border">
+							  <td colspan="4"  ><div> 
+       
+
+       <label>  <div class="Code">  </div>
+       <div class="Code1">  </div>
+
+    </label> 
+                            </div></td>
+							                         
+							  <td>&nbsp;</td>
+							  <td>&nbsp;</td>
+							  <td colspan="3"> <strong class="red"> Sub Total</strong>&nbsp;&nbsp; 
+							  $729.92 
+                                
+                             </td>
+				   </tr> 
+							 
+							 
+							 
+							</tbody>
+							</table> 
+                           
+                           	   
+             
+                                <div class="orange1"><a href="checkoutcart">Proceed to Checkout »</a></div>
+                                
+                                <div class="orange"><a href="indexpage">Continue Shopping »</a></div>
+                                
+           </div>
+             </div>
+
+             <div class="clear"></div>
+  </div>
+   
+</div>
+ </div>
+		
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+ 
+
+
+</head>
+<body>
+ <div class="footer">
+   <div class="footer-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="footer" style="padding:0;">
+            <div class="footer-cols-wrapper">
+              <div class="footer-col">
+                <div class="f_block">
+                  <h4>Information<span class="toggle"></span></h4>
+                  <div class="footer-col-content">
+                    <div class="part1">
+                      <ul>
+                        <li><a href="indexpage">Home</a></li>
+                        <li><a href="Shipping">Shipping</a></li>
+                        <li><a href="Privacy-Policy">Privacy Policy</a></li>
+                        <li><a href="store-info">Store Info </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-col">
+                <div class="f_block">
+                  <h4>Customer Service<span class="toggle"></span></h4>
+                  <div class="footer-col-content">
+                    <div class="part1">
+                      <ul>
+                        <li><a href="viewcartdetails">View Cart </a></li> 
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+               
+               
+               
+              <div class="footer-col wide-col">
+                <div class="f_block">
+                  <h4>Subscribe for Saving<span class="toggle"></span></h4>
+                  <div class="footer-col-content">
+                  <form action="subscribetoemail" method="post" >
+                     <input type="text" id="newsEmail" name="emailid" value="Enter your email here" onfocus="this.value=''" onblur="if(this.value=='') this.value='Enter your email here';">
+                     <input name="" type="submit" value=">" onclick="subscribe()" class="newsSubmit" return false>
+                      <div class="clear"></div>
+                      <font color="red">
+                     <div id="errormsg">
+                      
+                     
+                     </div>
+                     </font>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-col wide-col last" style="width:150px;">
+                <div class="f_block block-subscribe">
+                  <h4> <span class="toggle"></span></h4>
+                  <div class="footer-col-content">
+                    <div class="part1"> <img src="images/brand.JPG" width="149" height="108">
+                      <ul>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contents">
+        <p>Bicyclebuys.com will process any manufacturers warranty on any product we sell. Warranty claims need to be made to customer support at bicyclebuys.com. All warranty claims will be assessed based on the manufacturer's guidelines. Please call us at 1-888-4-Bike-Buy (1-888-424-5328, 631-673-2211) or e-mail your questions to info@bicyclebuys.com.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="design-wrapper">
+  <div class="container">
+    <div class="design">
+      <p class="fcl">BicycleBuys.com @ 2013 All rights reserved. </p>
+      <p class="fcr">Phone: 1-888424-5328 1-631-673-2211 Email: info@bicyclebuys.com</p>
+      
+    </div>
+  </div>
+  
+</div>
+   
+<script src="js/cust.js"></script>
+                 
+<script src="js/jcarousellite_1.0.1c4.js" type="text/javascript"></script> 
+<script src="js/newsticker.js" type="text/javascript"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/script.js"></script>
+
+
+
+</body>
+</html>
+    
+ 
+</body>
+</html>

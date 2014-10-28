@@ -1,0 +1,160 @@
+ 
+.block-cart-header:before,
+.block-cart-header:after,
+.header-button.currency-list > a:after, 
+.header-button.lang-list > a:after,
+.sf-menu li a:before,
+.add-to-links li a:before,
+.row-product .email-friend:before,
+.btn-remove:before,
+.btn-remove2:before,
+.btn-edit:before,
+.sorter .view-mode .grid:before,
+.sorter .list:before,
+.block-layered-nav dd li:before,
+.product-view .box-tags .form-add .input-box:before,
+.row-product .no-rating:before,
+#menu-icon:before,
+.sf-menu-phone li strong:before,
+span.toggle:before,
+.checkout-progress li:before,
+.about-padd-2 ul li:before,
+.currency-switch .currency-title:before,
+.language-list .language-title:before,
+.swipe ul a:before,
+.switch-show > div:after,
+#back-top span:before,
+.map-popup-close:before,
+.block-slider-sidebar .slider-sidebar-pager a:before,
+.home-link:before,
+.custom-servis-ul li h3:before,
+button.button span:before,
+.header .form-search button.button span:before,
+.camera_wrap .camera_pag .camera_pag_ul li:before,
+.footer ul li a:before,
+.list-icon li a:before,
+.camera_prev > span:before,
+.camera_next > span:before  {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  text-indent: 0 !important;
+}
+
+/* =========================== font fontello ============================================== */
+
+    
+   
+
+/* Footer ================================================================================ */
+.footer-container { max-width:1230px; margin:0 auto;  border-radius:0 0 5px 5px; overflow: hidden;}
+.footer {}
+.footer-cols-wrapper {	position:relative; overflow:hidden; }
+.footer h4 { text-align:left;
+	position:relative;
+	font-size: 20px;
+	font-weight:normal;
+	font-family: 'Oswald', sans-serif;
+color: #FFF;
+	 font-weight: normal;
+}
+.footer ul li { text-align:left;	display:block;	padding:0 0 5px; font-size:14px; }
+.footer ul li a {padding: 0;	display:inline-block; text-decoration:none;  }
+.footer ul li a:before { content: "\f105"; font-size:15px; color:#333333;    }
+.footer ul li a:hover { color:#fe8503; }
+.footer .footer-col { float:left; margin-right:30px;	width: 235px;}
+.footer .footer-col.wide-col { width:274px; }
+.footer .footer-col.last { margin-right:0; }
+.footer .footer-col span.tel {	display:block; font-size:18px; line-height:22px;	color:#fe8503; }
+.footer .footer-col .fb-like-box,
+.footer .footer-col iframe {background: #EDEFF4;}
+
+.footer_info p { font-size:14px; color:#777; margin:0 0 20px 0; }
+.footer_info span { text-align:left; display:block; font-size:17px;	font-weight:normal;	color:#333; margin-bottom:4px; }
+.footer_info strong { text-align:left !important; font-size:22px; font-weight:500; color:#59c00d; }
+
+ 
+span.toggle {
+	 
+}
+span.toggle:before { }
+span.opened:before { }
+
+/* ======================================================================================= */
+.search-form  .form-list .input-box {width:300px;}
+.search-form  .buttons-set p.required  {text-align:left;}
+.search-form  .buttons-set button.button {float:left;}
+
+ 
+
+
+#newsticker-demo1 {
+	float: right; margin:10px 0 0 0;
+	 width:85% !important;
+	overflow: hidden !important;
+	background: #FFF;
+height: 132px !important;
+	color: #000;
+}
+#newsticker-demo1 .title {
+	font-weight: bold;
+	padding: 5px;
+	color: #ed1c24;
+}
+#newsticker-demo1 p {
+	 
+	 
+}
+#newsticker-demo1 ul {
+}
+#newsticker-demo1 li {
+	list-style: none;
+	 float:left; margin:0 13px;
+height: 132px !important;width: 179px !important;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px; border: solid 1px #ccc;
+}
+#newsticker-demo1 img{   max-height: 132px !important;
+	    max-weight: 179px !important;
+ }
+#newsticker-demo1 li a {
+	display: block; text-align:center;
+	color: #b10505;
+	text-decoration: none;
+}
+#newsticker-demo1 li a:hover {
+	text-decoration: underline;
+}
+.previous {outline:none;cursor:pointer; float:right;margin:30px 0 0 15px; background-size:100%;}
+.next {outline:none;cursor:pointer; margin:30px 0 0 15px;vertical-align: top;float:left;background-size:100%;}
+
+
+@media only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+	.col-sm-9 {
+		width: 100% !important;
+	}
+	#newsticker-demo1 {
+ 
+	 width:100% !important;
+	overflow: hidden !important;
+	background: #FFF;
+	 height: 153px !important;
+	color: #000;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

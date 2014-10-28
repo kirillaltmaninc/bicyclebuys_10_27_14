@@ -1,0 +1,270 @@
+ul.lof-main-wapper li {
+	position: relative
+}
+
+a#vlb {
+	display: none
+}
+
+.clr,.final-clr {
+	clear: both
+}
+
+.final-clr1 {
+	height: 15px;
+	clear: both
+}
+
+.clear {
+	clear: both
+}
+
+.red {
+	color: red
+}
+
+.productimages {
+	width: 80px;
+	height: 70px;
+	float: left;
+	margin: 0 10px 0 0
+}
+
+.clr {
+	clear: both;
+	height: 15px
+}
+
+.font {
+	line-height: 15px;
+	margin: 0 0 10px;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 400;
+	font-family: Arial, Helvetica, sans-serif;
+	color: red
+}
+
+.banner1 {
+	background: #fff
+}
+
+.tab {
+	width: 33%
+}
+
+table {
+	width: 100%
+}
+
+.free {
+	width: 70px;
+	height: 60px;
+	float: right
+}
+
+.font1 {
+	height: 25px
+}
+
+#wowslider-container1 {
+	zoom: 1;
+	position: relative;
+	width: 100%;
+	height: 300px;
+	margin: 0 auto;
+	z-index: 100
+}
+
+#wowslider-container1 .ws_images {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	overflow: hidden
+}
+
+#wowslider-container1 .ws_images a {
+	color: transparent
+}
+
+#wowslider-container1 .ws_images img {
+	width: 750px;
+	height: 300px;
+	border: none 0
+}
+
+#wowslider-container1 a {
+	text-decoration: none;
+	outline: 0;
+	border: none
+}
+
+#wowslider-container1 .ws_bullets {
+	font-size: 0;
+	padding: 10px;
+	float: left;
+	position: absolute;
+	z-index: 70
+}
+
+#wowslider-container1 .ws_bullets div {
+	position: relative;
+	float: left
+}
+
+#wowslider-container1 .ws_bullets a {
+	width: 15px;
+	height: 15px;
+	background: url(../images/bullet.png) left top;
+	float: left;
+	text-indent: -1000px;
+	position: relative;
+	margin-left: 3px
+}
+
+#wowslider-container1 .ws_bullets a:hover {
+	background-position: 0 50%
+}
+
+#wowslider-container1 .ws_bullets a.ws_selbull {
+	background-position: 0 100%
+}
+
+#wowslider-container1 a.ws_next,#wowslider-container1 a.ws_prev {
+	position: absolute;
+	display: none;
+	top: 50%;
+	margin-top: -15px;
+	z-index: 60;
+	height: 45px;
+	width: 45px;
+	background-image: url(../images/arrows.png)
+}
+
+#wowslider-container1 a.ws_next {
+	background-position: 100% 0;
+	right: 21px
+}
+
+#wowslider-container1 a.ws_prev {
+	left: 21px;
+	background-position: 0 0
+}
+
+#wowslider-container1:hover a.ws_next,#wowslider-container1:hover a.ws_prev,* html #wowslider-container1 a.ws_next,* html #wowslider-container1 a.ws_prev
+	{
+	display: block
+}
+
+#wowslider-container1 .ws-title {
+	position: absolute;
+	display: block;
+	bottom: 26px;
+	left: 20px;
+	margin-right: 25px;
+	padding: 15px;
+	background: #FFF;
+	color: #333;
+	z-index: 50;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial,
+		Verdana, sans-serif;
+	font-size: 14px;
+	opacity: .8;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	filter: alpha(opacity = 90)
+}
+
+#wowslider-container1 .ws-title div {
+	padding-top: 5px;
+	font-size: 12px
+}
+
+#wowslider-container1 .ws_bullets a img {
+	text-indent: 0;
+	display: block;
+	top: 20px;
+	left: -113px;
+	visibility: hidden;
+	position: absolute;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	border: 4px solid #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px
+}
+
+#wowslider-container1 .ws_bullets a:hover img {
+	visibility: visible
+}
+
+#wowslider-container1 .ws_bulframe div div {
+	height: 90px;
+	overflow: visible;
+	position: relative
+}
+
+#wowslider-container1 .ws_bulframe div {
+	left: 0;
+	overflow: hidden;
+	position: relative
+}
+
+#wowslider-container1 .ws_bullets .ws_bulframe {
+	display: none;
+	top: 18px;
+	overflow: visible;
+	position: absolute;
+	cursor: pointer;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	border: 4px solid #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px
+}
+
+#wowslider-container1 .ws_bulframe span {
+	display: block;
+	position: absolute;
+	top: -10px;
+	margin-left: -4px;
+	left: 113px;
+	background: url(./triangle.png);
+	width: 15px;
+	height: 6px
+}
+
+.brandcol {
+	float: left;
+	width: 250px
+}
+
+.brandcol a {
+	font-size: 12px;
+	font-weight: 700;
+	color: #1c68ac !important
+}
+
+.brandcol a:hover {
+	color: #44a2f7
+}
+
+.brandcol1 {
+	float: right;
+	width: 250px
+}
+
+.brandcol1 a {
+	font-size: 12px;
+	font-weight: 700;
+	color: #1c68ac !important
+}
+
+.brandcol1 a:hover {
+	color: #44a2f7
+}
+
+#demo-right {
+	width: 501px
+}

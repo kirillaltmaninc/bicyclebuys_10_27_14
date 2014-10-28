@@ -1,0 +1,82 @@
+
+/******* /CONTAINER *******/
+/******* FORM *******/
+#customForm2{
+	padding: 0 10px 10px;
+}
+#customForm2 label{
+	display: block;
+	font-family: Calibri, Arial;
+	color:#FAFAFA !important;
+	 
+	font-weight: 700;
+	line-height: 1.4em;
+}
+ 
+
+
+ span.error{margin: 0 0 0 12px;
+font-size: 11px;border:none; background:none;
+color: red !important;}
+
+#customForm2 input.error,select.error{
+	background: #f8dbdb;
+	border:1px solid  #e77776;
+}
+ 
+
+
+.error{
+	background:#f8dbdb;
+	border: 2px solid #e77776;
+}
+
+#customForm2 textarea.error{
+	background:#f8dbdb;
+	border: 2px solid #e77776;
+}
+#customForm2 div{
+	 
+}
+#customForm2 div span{
+	/*margin-left: 10px;*/
+	color: #b1b1b1;
+	font-size: 11px;
+	font-style: italic;
+}
+#customForm2 div span.error{
+	margin: 0 0 0 12px;
+font-size: 11px;color: red !important;
+}
+#customForm2 #send{
+	background-color: #c15710;
+color: #ffffff;
+padding: 4px 8px;
+float: left;
+border: 1px #af5519 solid;
+cursor: pointer;}
+
+#fnameInfo{margin: 0 0 0 12px;
+font-size: 11px;color: red !important;}
+#customForm2 #send:hover{
+	background: #79a7f1;
+}
+#error{
+	background: red;
+}
+#error ul{
+	list-style: square;
+	padding: 5px;
+	font-size: 11px;
+}
+#error ul li{
+	list-style-position: inside;
+	line-height: 1.6em;
+}
+#error ul li strong{
+	color: #e46c6d;
+}
+#error.valid ul li strong{
+	color: #93d72e;
+}
+/******* /FORM *******/

@@ -1,0 +1,92 @@
+@media only screen and (min-width: 768px) { 
+	  
+ }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	
+	#search_mini_form { margin: 12px 20px 0 0; }
+	
+	.footer .footer-col { margin-right:20px;	width:140px; }
+	.footer .footer-col.wide-col { width:220px; }
+	.footer ul li { font-size:13px; }
+	.block-subscribe .input-box input { 
+		font-size:11px;
+		padding-left:5px;
+		padding-right:5px;
+	}
+	
+	 
+	
+ 
+}
+
+@media only screen and (max-width: 1400px) {#back-top {display: none !important;} }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	 
+	
+	.footer-container {padding: 20px 0;}
+	.footer-cols-wrapper { position:relative;  }
+	.footer .footer-col { margin-right:20px;	width:104px; }
+	.footer .footer-col.wide-col { width:161px; }
+	.footer .footer-col.footer-col-ex.facebook-fanbox {width: 235px;}
+	.footer h4 { font-size:14px; }
+	.footer ul li {	padding:0 0 2px; font-size:11px; }
+	.footer ul li a:before { display:none; }
+	.footer_info p { font-size:11px; line-height:13px; }
+	.footer_info span { font-size:14px; }
+	.footer_info strong { font-size:18px; }
+	
+	 
+	
+	
+}
+@media only screen and (max-width: 767px) {
+	 
+	 
+	 
+ 
+   
+	
+  
+
+  
+  
+
+	.sidebar .block .block-content,
+	.block-compared,
+	.block-compare,
+	.products-grid .actions	li+li,
+	.products-list .add-to-links li+li,
+	.products-grid .add-to-links,
+	.products-list .add-to-links,
+	.block-wishlist,
+	.breadcrumbs,
+	.toolbar .sorter,
+	.cart .crosssell .add-to-links li+li,
+	.my-account .data-table thead,
+	.opc #checkout-review-table thead,
+	.opc #checkout-review-table colgroup,
+	.opc #checkout-review-table .item-options,
+	.footer .footer-col-content {display:none;}
+
+	.footer {padding:0 10px;}
+	.footer-cols-wrapper {border:0;}
+	.footer .footer-col { margin-right:0; width:100%; }
+	.footer .footer-col.wide-col { width:100% !important; }
+	.footer .footer-col-content {margin-bottom:12px;}
+	.footer .paypal-logo {float: left; clear: left; margin: 10px 0;}
+	.footer address { border-top:none; }
+	.footer h4 {border-bottom: 1px solid #ddd; padding-bottom: 8px; font-size:15px;font-family: 'Oswald', sans-serif;}
+	.footer h4:hover {cursor:pointer;}
+	.footer-container-bottom .paypal-logo { float: left; clear: left; margin: 10px 0;}
+	.footer .facebook-fanbox {text-align: center;}
+	.footer .store-switcher {float: left; clear: left;}
+	.socials h4 { float:none; margin:0 0 13px 0; }
+	.socials .footer-col-content { float:none; }
+	.newsletter-wrapper { margin-bottom:0; }
+	
+	 
+
+}
+ 
+
